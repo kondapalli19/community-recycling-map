@@ -19,7 +19,7 @@ export default function Map({ center, zoom, markers }: MapProps) {
   useEffect(() => {
     if (!mapRef.current || typeof window === 'undefined') return;
   
-    const google = (window as any).google; // 👈 TypeScript won't complain now
+    const google = (window as any).google; 
   
     if (!google) return;
   
