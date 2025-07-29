@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ♻️ EcoTrack: A Community-Driven Waste Reporting Platform
 
-## Getting Started
+## 🌍 Project Inspiration
 
-First, run the development server:
+Living in Bhubaneswar, I’ve often noticed plastic bags and other waste littering streets — even around IT parks and commercial areas. Despite daily waste collection by municipal trucks and vans, cleanliness remains inconsistent. This made me realize that even with systems in place, awareness and coordination are lacking.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+As someone working in IT, I felt I could contribute through technology — by creating a platform where people can report waste sightings, connect with Dry Waste Collection Centres (DWCCs), and involve the community in active waste management. The goal is to bridge the gap between waste generation and cleanup action using a user-friendly digital interface.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📜 Project History
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Initially, I had no specific direction other than wanting to help clean up my surroundings. But as I researched more, I discovered DWCCs — government-recognized centers responsible for dry waste collection and recycling, often working with NGOs and recyclers.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To my surprise, many areas (including mine) had no visible DWCCs listed online, and waste was being transported to state borders for processing. That discovery led to a deeper mission — to build awareness, improve resource visibility, and offer alternatives like *kabadiwalas* (local ragpickers) who already operate within the community.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 👥 Roles: User & Admin
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To make the platform more collaborative and scalable:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 🧑‍💻 **User Role**:
+- 🔍 Can search for DWCCs near their location.
+- ➕ If none exist, they can submit details of a nearby kabadiwala with location and contact info.
+- 🎮 Can play the awareness game or report uncollected waste.
 
-## Deploy on Vercel
+### 👩‍💼 **Admin Role**:
+- ✔️ Reviews and verifies kabadiwala submissions.
+- ✏️ Approves or edits details before adding to the public listing.
+- 📦 Manages DWCC and kabadiwala database entries for accuracy and relevance.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This ensures community-driven contributions while keeping data quality in check.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🗺️ Use of Google Maps Platform
+
+Google Maps Platform powers the location-based functionality:
+
+- 📍 Captures user’s current location.
+- 🧭 Identifies DWCCs within ~5 km radius.
+- 📞 Displays their contact info and pickup status.
+- 🚫 If no DWCCs are nearby, displays verified kabadiwalas instead.
+- 📌 Allows users to suggest new kabadiwalas with location pin and contact info.
+
+> *Currently, the location data is static, but integration with real-time APIs is planned in the next phase.*
+
+---
+
+## 💡 Key Learnings & Differentiators
+
+### 📚 Key Learnings:
+- Learned how cities like **Indore** stayed India’s cleanest city for 8 years, largely due to citizen participation and proper segregation.
+- Realized the importance of hyper-local solutions like kabadiwalas when formal systems are unavailable.
+- Designed a **waste segregation game** to educate users in a fun and memorable way.
+- Introduced a **user-admin workflow** to ensure the system remains trustworthy and community-driven.
+
+### 🌟 Differentiators:
+- ✅ Builds *awareness*, not just a tool.
+- 🙌 Encourages *community input* and responsibility.
+- 🧠 Combines *education + action* through games and reporting tools.
+- 🔍 Makes otherwise invisible systems like DWCCs *discoverable and approachable*.
+
+---
+
+## 🔧 Current Status & What’s Next
+
+### ✅ **Features Live**:
+- 🌐 Landing page
+- 📍 Location capture
+- 🧾 DWCC info display (or kabadiwala fallback)
+- 🎮 Waste segregation game
+- 📬 Contact/collaboration form
+
+### 🚧 **Coming Soon**:
+- 🔄 Real-time API integration for DWCCs
+- 📨 Pickup request submission
+- 🌐 Interactive map filtering and routing
+- ✅ Admin panel for verifying user submissions
+- 📊 Dashboard for tracking waste reports and kabadiwala requests
+
+---
+
+## 🤝 Get Involved
+
+If you're passionate about sustainability, civic tech, or just want to contribute, reach out via the **Contact** section. Whether it’s adding data, designing features, or sharing feedback — *every bit helps*.
+
+---
