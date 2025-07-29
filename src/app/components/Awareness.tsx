@@ -14,7 +14,7 @@ const items: WasteItem[] = [
   { id: 3, name: "Glass Jar", type: "glass" },
   { id: 4, name: "Food Waste", type: "trash" },
   { id: 5, name: "Milk Carton", type: "paper" },
-  { id: 6, name: "Soda Can", type: "trash" },       
+  { id: 6, name: "Soda Can", type: "trash" },
   { id: 7, name: "Plastic Straw", type: "plastic" },
   { id: 8, name: "Magazine", type: "paper" },
   { id: 9, name: "Broken Glass", type: "glass" },
@@ -46,7 +46,7 @@ export default function Awareness() {
   };
 
   return (
-    <section className="relative h-screen w-full bg-green-50 flex flex-col items-center justify-center text-center px-4">
+    <section className="relative h-screen w-full bg-green-50 flex flex-col items-center justify-center text-center px-4" id="learn">
       <h1 className="text-4xl font-bold text-green-700 mb-4">
         Sort the Waste: Recycling Challenge
       </h1>
@@ -74,15 +74,15 @@ export default function Awareness() {
       <div className="text-lg text-gray-800">Score: {score}</div>
 
       <button
-  className="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
-  onClick={() => {
-    setScore(0);
-    setMessage("");
-    setCurrentItem(items[Math.floor(Math.random() * items.length)]);
-  }}
->
-  Get Started
-</button>
+        className="mt-8 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-6 rounded-full"
+        onClick={() => {
+          setScore(0);
+          setMessage("");
+          setCurrentItem(items[Math.floor(Math.random() * items.length)]);
+        }}
+      >
+        Get Started
+      </button>
 
     </section>
   );
